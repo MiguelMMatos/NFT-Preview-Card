@@ -1,0 +1,153 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --background-blue: hsl(217, 54%, 11%);
+    --secondary-blue: hsl(216, 50%, 16%);
+    --medium-dark-blue: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+    --font-family: 'Outfit', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body,
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+    margin-inline: 7px;
+}
+
+
+/* CSS */
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: var(--background-blue);
+    font-family: var(--font-family);
+}
+
+.card-container {
+    width: 80%;
+    min-height: 500px;
+    border-radius: 20px;
+    margin: auto;
+    padding: 10px;
+    background: var(--secondary-blue);
+}
+
+.inner-container {
+    width: 90%;
+    padding-block: 15px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-image {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card-image-click {
+    opacity: 0.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-name {
+    color: var(--white);
+    margin-block: 20px;
+    font-weight: 900;
+}
+
+.card-description {
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--soft-blue);
+    margin-bottom: 20px;
+}
+
+
+/* Cripto */
+
+.cripto-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cripto-amount {
+    color: var(--cyan);
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+}
+
+.amount {
+    padding-inline: 10px;
+}
+
+.days-left-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--soft-blue);
+    font-weight: 900;
+}
+
+.days-left {
+    padding-inline: 5px;
+}
+
+.border {
+    margin-block: 20px;
+    border: 1px solid var(--soft-blue);
+}
+
+.profile-image {
+    width: 40px;
+    height: 40px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.card-createdBy {
+    margin-inline: 20px;
+    font-size: 1rem;
+    color: var(--soft-blue);
+}
+
+@media only screen and (min-width: 1440px) {
+    .card-container {
+        width: 20%;
+    }
+}
+
+
+/* Utility class */
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
